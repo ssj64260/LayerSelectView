@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LayerSelectView">
+        <attr name="layer_height" format="dimension" />
+        <attr name="content_margin_top" format="dimension" />
+        <attr name="content_height_match_parent" format="boolean" />
+        <attr name="layer_selected_color" format="color" />
+        <attr name="layer_unselected_color" format="color" />
+    </declare-styleable>
+
+</resources>

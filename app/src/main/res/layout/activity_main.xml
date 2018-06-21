@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <com.android.layerselectview.widget.layerselectview.LayerSelectView
+        android:id="@+id/layerSelectView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        app:content_height_match_parent="false"
+        app:content_margin_top="1dp"
+        app:layer_height="40dp"
+        app:layer_selected_color="@color/color_2D5AAE"
+        app:layer_unselected_color="@color/color_272727" />
+
+</android.support.constraint.ConstraintLayout>
