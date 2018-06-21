@@ -3,7 +3,6 @@ package com.android.layerselectview.widget.layerselectview;
 import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +20,6 @@ import java.util.List;
 
 public class LayerListAdapter extends RecyclerView.Adapter {
 
-    private Context mContext;
     private List<LayerInfo> mDatas;
     private LayoutInflater mInflater;
     private IOnListClickListener mListClick;
@@ -30,7 +28,6 @@ public class LayerListAdapter extends RecyclerView.Adapter {
     private int mUnselectedColor = Color.BLACK;
 
     public LayerListAdapter(Context context, List<LayerInfo> datas) {
-        mContext = context;
         mDatas = datas;
         mInflater = LayoutInflater.from(context);
     }

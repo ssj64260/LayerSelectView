@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                     province.setCityList(cityList);
                     mLayerSelectView.addLayer(province);
                 } else {
-                    ToastMaster.toast(province.getName());
+                    ToastMaster.toast("已选择：" + province.getName());
                 }
             } else if (object instanceof City) {
                 final City city = (City) object;
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     city.setAreaList(areaList);
                     mLayerSelectView.addLayer(city);
                 } else {
-                    ToastMaster.toast(city.getName());
+                    ToastMaster.toast("已选择：" + city.getName());
                 }
             } else if (object instanceof Area) {
                 final Area area = (Area) object;
@@ -92,11 +92,11 @@ public class MainActivity extends AppCompatActivity {
                     area.setStreetList(streetList);
                     mLayerSelectView.addLayer(area);
                 } else {
-                    ToastMaster.toast(area.getName());
+                    ToastMaster.toast("已选择：" + area.getName());
                 }
             } else if (object instanceof Street) {
                 final Street street = (Street) object;
-                ToastMaster.toast(street.getName());
+                ToastMaster.toast("已选择：" + street.getName());
             }
         }
     };

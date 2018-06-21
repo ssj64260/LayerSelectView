@@ -26,10 +26,10 @@ public class LayerSelectView extends LinearLayoutCompat {
     private ContentListAdapter mContentAdapter;
 
     private DividerItemDecoration mDivider;
-    private int mContentMarginTop;
+    private int mContentMarginTop;//选中层列表和预选层之间的间距
 
-    private int mSelectedColor;
-    private int mUnselectedColor;
+    private int mSelectedColor;//当前选中层的颜色
+    private int mUnselectedColor;//其他选中层的颜色
 
     public LayerSelectView(Context context) {
         this(context, null, 0);
